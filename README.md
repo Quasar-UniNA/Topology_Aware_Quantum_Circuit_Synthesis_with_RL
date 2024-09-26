@@ -15,11 +15,11 @@ The directories and files related to the test experiments in the 5 qubit-case ar
 The decription of them is provided below:
 - `qiskit_sat_synthesis_main`: directory containing a collection of SAT-based synthesis methods for various Qiskit objects
 - `datasets`: directory containing the datasets used for test the model. It contains both the routed and non-routed datasets
-- `results`: directory containing the files where the evaluated performance obtained from the test are saved. The performance values are the depth and CX depths of the circuits synthesized by the RL trained model, the state-of-the-art greedy techniques and the SAT solver
-- `plots`: directory containing th plots related to the comparison of the performance with that of the state-of-the-art
+- `results`: directory containing the files where the evaluated performance obtained from the test are saved. In particular, there are two objects related to the depths and CX depths of the circuits synthesized by the RL trained model, the state-of-the-art greedy techniques and the SAT solver, and a text file related to the time averages of the algorithms
+- `plots`: directory containing the plots related to the comparison of the performance with that of the state-of-the-art
 - `5q_model.zip`: RL trained model used for the test 
 - `generate_tst_dataset.py`: file containing the code to generate a new test dataset and save it in the `datasets` directory
-- `test.py`: file containing the code to test the trained model: it saves the results in the "results" directory and plots the performance in the "plots" directory
+- `test.py`: file containing the code to test the trained model: it saves the results in the `results` directory and plots the performance in the `plots` directory
 
 ## Usage
 In the `results` and `plots` directories the values related to the test that has already been conducted are present.
@@ -31,7 +31,7 @@ and test the model by running the `test.py` file with the following command:
 ```
 python test.py
 ```
-In the code you can specify if the test dataset you are using is routed or not by filling the `input_type` variable.
+In the `test.py` code you can specify if the test dataset you are using is routed or not by filling the `input_type` variable.
 At the end of the test you will be able to visualize the new results and plots in the respective folders.
 
 
