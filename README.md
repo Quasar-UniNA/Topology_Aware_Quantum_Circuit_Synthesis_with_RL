@@ -22,7 +22,10 @@ The decription of the files and directories contained in the project is provided
 
 ## Usage
 In the `results` and `plots` directories the values related to the test that has already been conducted are present.
-If you want to conduct a new test, you can create a new dataset by running the `generate_test_dataset.py` file and visualize the new results and plots by running the `test.py` file.
+If you want to conduct a new test, you can create a new dataset by running the `generate_test_dataset.py` file with the following command:
+`python generate_test_dataset.py`
+and visualize the new results and plots by running the `test.py` file with the following command:
+`python test.py`
 
 
 
