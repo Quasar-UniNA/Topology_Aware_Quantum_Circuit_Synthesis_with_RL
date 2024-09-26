@@ -31,7 +31,7 @@ and test the model by running the `test.py` file with the following command:
 ```
 python test.py
 ```
-In the `test.py` code you can specify if the test dataset you are using is routed or not by filling the `input_type` variable.
+In the `test.py` code you can specify if the test dataset you are using is routed or not by filling the `input_type` variable wth the value "routing" or "norouting".
 At the end of the test you will be able to visualize the new results and plots in the respective folders.
 
 
