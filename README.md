@@ -7,7 +7,7 @@ This project introduces a topology-aware reinforcement learning-based quantum ci
 ## Installation
 Follow these steps to set up the environment and install the necessary packages to run the project:
 1. Clone the repository
-2. Create and activate a virtual environment (anaconda was used for this project)
+2. Create and activate a virtual environment with Python installed inside (an anaconda environment with Python=3.11.5 was used for this project)
 3. Install the required packages using requirements.txt
 
 ## Contents
