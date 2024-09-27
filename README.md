@@ -23,15 +23,17 @@ The decription of them is provided below:
 
 ## Usage
 In the `results` and `plots` directories the values related to the test that has already been conducted are present.
-If you want to conduct a new test, you can create new datasets, routed and not, by running the `generate_test_dataset.py` file with the following command:
-```
-python generate_test_dataset.py
-```
-and test the model by running the `test.py` file with the following command:
+
+If you want to conduct a new test and want to use the availbale datasets, in the `test.py` code you can specify if the test dataset you are using is routed or not by filling the `input_type` variable with the value "routing" or "norouting".
+You can test the model by running the `test.py` file with the following command:
 ```
 python test.py
 ```
-In the `test.py` code you can specify if the test dataset you are using is routed or not by filling the `input_type` variable wth the value "routing" or "norouting".
+If you want to conduct a new test with a new dataset, you can create new datasets, routed and not, by running the `generate_test_dataset.py` file with the following command:
+```
+python generate_test_dataset.py
+```
+Do not forget to change the directory paths if necessary.
 At the end of the test you will be able to visualize the new results and plots in the respective folders.
 
 
