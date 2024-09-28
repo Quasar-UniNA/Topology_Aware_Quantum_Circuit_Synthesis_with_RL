@@ -11,7 +11,7 @@ Follow these steps to set up the environment and install the necessary packages 
 3. Install the required packages using requirements.txt
 
 ## Contents
-The directories and files related to the test experiments in the 5 qubit-case are provided.
+The directories and files related to the test experiments for the 5 qubit-case are provided.
 The decription of them is provided below:
 - `qiskit_sat_synthesis_main`: directory containing a collection of SAT-based synthesis methods for various Qiskit objects
 - `datasets`: directory containing the datasets used for testing the RL trained model. It contains both the routed and non-routed datasets
