@@ -2,10 +2,10 @@
 Generalizing Reinforcement Learning-based Quantum Circuit Synthesis across Multiple Topologies
 
 ## Description
-This project introduces a topology-aware reinforcement learning-based quantum circuit synthesis which addresses different topologies simultaneously. Performance is evaluated in terms of the depth and CX depth values of the synthesized circuits and is compared to the state-of-the-art greedy techniques and a SAT solver. Experimental tests demonstrate that the proposed synthesizer outperforms state-of-the-art greedy techniques while being significantly faster than SAT solvers. The trained models have been tested both on routed and non-routed datasets.
+This project introduces a topology-aware reinforcement learning-based quantum circuit synthesis which addresses different topologies simultaneously. Performance is evaluated in terms of the CX depth and depth values of the synthesized circuits and is compared to the state-of-the-art greedy techniques and a SAT solver. Experimental tests demonstrate that the proposed synthesizer outperforms state-of-the-art greedy techniques while being significantly faster than SAT solvers. The trained models have been tested both on routed and non-routed datasets.
 
 ## Installation
-Follow these steps to set up the environment and install the necessary packages to run the project:
+Follow these steps to set up the environment and install the necessary packages to run the provided code:
 1. Clone the repository
 2. Create and activate a virtual environment with Python installed inside (an anaconda environment with Python=3.11.5 was used for this project)
 3. Install the required packages using requirements.txt
