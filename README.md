@@ -26,11 +26,10 @@ The decription of them is provided below:
 - `main.py`: file containing the code to use the synthesis method presented
 
 ## Usage
-In the `results` and `plots` directories the values related to the tests that has already been conducted are present.
-
 If you want to synthesize a Clifford operator and obtain the near-optimal synthesized quantum circuit you can run the `main.py` file with the following command:
 ```
 python main.py
 ```
+In the `results` and `plots` directories the values related to the tests that has already been conducted are present.
 
 To test the synthesis method on the same data used during the test session, you can use the datasets present in the `datasets` directory.
