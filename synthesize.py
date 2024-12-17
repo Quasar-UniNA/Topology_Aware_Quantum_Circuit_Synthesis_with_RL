@@ -24,7 +24,7 @@ def synthesize(clifford, coupling_map):
         action, _ = model.predict(obs, action_masks=env.action_masks())
         obs, reward, terminated, truncated, info = env.step(action)
 
-    rl_synth_qc = env.info["synthetized_qc"]
+    rl_synth_qc = env.info["synthetized_qc"].inverse()
     print("terminated: ", terminated)
     print("truncated: ", truncated)
     
