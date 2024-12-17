@@ -13,7 +13,7 @@ if __name__ == "__main__":
     coupling_map = [[0, 2], [2, 1], [2, 3], [3, 4]]
 
 
-    # you can provide as input either a list of egdes of the coupling map or an object of the CouplingMap class
+    # you can provide as input either a list of egdes representing the coupling map or an object of the CouplingMap class
     synthesized_qc = synthesize(clifford, coupling_map)
     
     print(synthesized_qc)
