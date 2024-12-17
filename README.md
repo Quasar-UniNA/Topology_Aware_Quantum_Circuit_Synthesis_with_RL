@@ -17,25 +17,20 @@ The decription of them is provided below:
 - `datasets`: directory containing the datasets used for testing the RL trained model. It contains both the routed and non-routed datasets
 - `results`: directory containing the files where the evaluated performance obtained from the test is saved. In particular, there are two objects related to the depths and CX depths of the circuits synthesized by the RL trained model, the state-of-the-art greedy techniques and the SAT solver, and a text file related to the time averages of the algorithms
 - `plots`: directory containing the plots related to the comparison of the performance og the RL trained model with that of the state-of-the-art
-- `5q_model.zip`: RL trained model used for the test 
+- `3q_model.zip`: RL trained model used for the test in the 3-qubit case 
+- `5q_model.zip`: RL trained model used for the test  in the 5-qubit case
 - `generate_tst_dataset.py`: file containing the code to generate a new test dataset and save it in the `datasets` directory
 - `test.py`: file containing the code to test the trained model: it saves the results in the `results` directory and plots the performance in the `plots` directory
+- `synthesis_env.py`: file containing the environment class
+- `synthesise.py`: file containing the synthesis method presented
+- `main.py`: file containing the code to use the synthesis method presented
 
 ## Usage
 In the `results` and `plots` directories the values related to the tests that has already been conducted are present.
 
-If you want to conduct a new test and want to use the availbale datasets, in the `test.py` code you can specify if the test dataset you are using is routed or not by filling the `input_type` variable with the value "routing" or "norouting".
-You can test the model by running the `test.py` file with the following command:
+If you want to synthesize a Clifford operator and obtain the near-optimal synthesized quantum circuit you can run the `main.py` file with the following command:
 ```
-python test.py
+python main.py
 ```
-If you want to conduct a new test with a new dataset, you can create new datasets, routed and not, by running the `generate_test_dataset.py` file with the following command:
-```
-python generate_test_dataset.py
-```
-and specify the name of the dataset you want to use in the `test.py` file.
 
-At the end of the test you will be able to visualize the new results and plots in the respective folders.
-
-
-
+To test the synthesis method on the same data used during the test session, you can use the datasets present in the `datasets` directory.
