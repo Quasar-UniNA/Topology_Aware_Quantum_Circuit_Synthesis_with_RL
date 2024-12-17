@@ -22,7 +22,7 @@ The decription of them is provided below:
 - `generate_tst_dataset.py`: file containing the code to generate a new test dataset and save it in the `datasets` directory
 - `test.py`: file containing the code to test the trained model: it saves the results in the `results` directory and plots the performance in the `plots` directory
 - `synthesis_env.py`: file containing the environment class
-- `synthesise.py`: file containing the synthesis method presented
+- `synthesize.py`: file containing the synthesis method presented
 - `main.py`: file containing the code to use the synthesis method presented
 
 ## Usage
